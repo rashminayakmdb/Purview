@@ -16,5 +16,14 @@ B: Create a Azure Purview Account
 
   - You can follow the steps provided in Microsoft Link. https://docs.microsoft.com/en-us/azure/purview/create-catalog-portal
   
+### C: Create a app service in Azure
+
+  - Download the code and open the code in Visual Studio.
+  - Go to Extensions on the left menu and type ### Azure
+  - Install the extensions for Azure Account,Azure Tools and Azure App Service.
+  
+
+
+  
 
   
