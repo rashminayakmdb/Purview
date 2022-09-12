@@ -20,7 +20,15 @@
 
   - You can follow the steps provided in Microsoft Link -  https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode
 
- ### D: Connect your local app to Azure
+### D: Create a root Purview collection in Azure Portal
+
+  - You can follow the steps provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/purview/quickstart-create-collection
+
+### E: Create a root Purview collection in Azure Portal
+
+- You can follow the steps provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb
+
+### F: Connect your local app to Azure
 
   - Download the code and open the code in Visual Studio.
   - In mongo.connect() add the connection string of the your Atlas cluster 6.0+.
