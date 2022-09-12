@@ -24,7 +24,7 @@
 
   - You can follow the steps provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/purview/quickstart-create-collection
 
-### E: Create a root Purview collection in Azure Portal
+### E: Create a Purview collection in Azure Portal
 
 - You can follow the steps provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb
 
