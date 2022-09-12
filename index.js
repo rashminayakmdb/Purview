@@ -4,7 +4,7 @@ var qs = require('qs');
 const date = require('date-and-time')
 app.get('/', function (req, res) {
     const mongo = require("mongodb").MongoClient;
-    mongo.connect("mongodb+srv://admin:admin@clusternewversion.69qfa.mongodb.net/?retryWrites=true&w=majority").then(client => 
+    mongo.connect("mongodb+srv://username:password@clusternewversion.69qfa.mongodb.net/?retryWrites=true&w=majority").then(client => 
     {
         console.log("Connected to MongoDB server");
         const axios=require("axios");
