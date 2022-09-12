@@ -18,7 +18,7 @@
   
 ### C: Create a app service in Azure
 
-  - You can follow the steps provided in Microsoft Link -  https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode
+  - You can follow the steps under the section "Create Azure resources" provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal#create-azure-resources
 
 ### D: Create a Purview collection in Azure Portal
 
