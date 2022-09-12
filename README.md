@@ -21,6 +21,7 @@
   - Download the code and open the code in Visual Studio.
   - In mongo.connect() add the connection string of the your Atlas cluster 6.0+.
   - Replace the database you want to watch in client.db("Company"); 
+  -  Go to Extensions on the left menu and type "MongoDB" and install the extension for MongoDB.
   - Go to Extensions on the left menu and type "Azure"
   - Install these extensions for 
     - Azure Account
