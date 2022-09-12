@@ -20,11 +20,11 @@
 
   - You can follow the steps provided in Microsoft Link -  https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-vscode
 
-### D: Create a root Purview collection in Azure Portal
+### D: Create a Purview collection in Azure Portal
 
   - You can follow the steps provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/purview/quickstart-create-collection
 
-### E: Create a Purview collection in Azure Portal
+### E: Add MongoDB as a source in Purview
 
 - You can follow the steps provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb
 
