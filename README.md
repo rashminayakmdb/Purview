@@ -12,15 +12,25 @@
   - Create a M10 Cluster in a cloud provider region of your choice with default settings. Make sure to choose Mongodb version 6.0. Capturing Change events on create and update of collection is introduced as part of 6.0 version
   - In the Security tab, add a new IP Whitelist for your laptop's current IP address
 
-B: Create a Azure Purview Account
+### B: Create a Azure Purview Account
 
   - You can follow the steps provided in Microsoft Link. https://docs.microsoft.com/en-us/azure/purview/create-catalog-portal
   
 ### C: Create a app service in Azure
 
   - Download the code and open the code in Visual Studio.
-  - Go to Extensions on the left menu and type ### Azure
-  - Install the extensions for Azure Account,Azure Tools and Azure App Service.
+  - mongo.connect() add the connection string of the your Atlas cluster 6.0+.
+  - Replace the database you want to watch in client.db("Company"); 
+  - Go to Extensions on the left menu and type "Azure"
+  - Install these extensions for 
+    - Azure Account
+    - Azure Tools
+    - Azure App Service
+    
+ ### D: Create a app service in Azure
+    
+    
+    
   
 
 
