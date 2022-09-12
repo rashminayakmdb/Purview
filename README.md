@@ -42,6 +42,9 @@
   - Once the extensions are intsalled you should see a Azure icon on the left menu.Click on that and sign in to Azure account. After Signing in, it should look like this.
    <img width="373" alt="Screenshot 2022-09-12 at 3 04 15 PM" src="https://user-images.githubusercontent.com/101181433/189621346-c3d9fef8-7fb4-4235-a5da-6e39bf2624a6.png">
 
+### G: Deploy your app to Azure
+  - You should see your new app services created in the Azure portal in Visual Studio under your subscription-> app services
+  - Right click on the app service, Click Deploy to Web App. Deployments should be done in few minutes.
 
     
 # Execution
