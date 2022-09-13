@@ -3,7 +3,7 @@
 # Requisites
  - MongoDB Atlas 6.0 cluster
  - Azure subscription
- - Visual Studio app installed, Go to https://code.visualstudio.com/download to download the app.
+ - Visual Studio app installed, Go to [Download](https://code.visualstudio.com/download) to download the app.
  
 # Setup
 
@@ -11,7 +11,7 @@
 
 ### A: Configure Atlas Environment
 
-  - Log-on to Atlas account. https://account.mongodb.com/account/login
+  - Log-on to Atlas account. [Login](https://account.mongodb.com/account/login)
   
   - In the project's Security tab, choose to add a new user called main_user, for this user select Add Default Privileges and in the Default Privileges section add the roles readWriteAnyDatabase.
   - Create a M10 Cluster in a cloud provider region of your choice with default settings. Make sure to choose Mongodb version 6.0. Capturing Change events on create and update of collection is introduced as part of 6.0 version
@@ -19,19 +19,23 @@
 
 ### B: Create a Azure Purview Account
 
-  - You can follow the steps provided in Microsoft Link -  https://docs.microsoft.com/en-us/azure/purview/create-catalog-portal
-  
-### C: Create a app service in Azure
+  - You can follow the steps provided in Microsoft Link -  [Create Purview Account](https://docs.microsoft.com/en-us/azure/purview/create-catalog-portal)
 
-  - You can follow the steps under the section "Create Azure resources" provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal#create-azure-resources
+### C: Create a Purview collection in Azure Portal
 
-### D: Create a Purview collection in Azure Portal
+  - You can follow the steps provided in Microsoft Link - [Create Purview Collection](https://docs.microsoft.com/en-us/azure/purview/quickstart-create-collection)
 
-  - You can follow the steps provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/purview/quickstart-create-collection
+### D: Add MongoDB as a source in Purview
 
-### E: Add MongoDB as a source in Purview
+- You can follow the steps provided in Microsoft Link - [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
 
-- You can follow the steps provided in Microsoft Link - https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb
+### E: Create a app service in Azure
+
+  - You can follow the steps under the section "Create Azure resources" provided in Microsoft Link - [Create App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal#create-azure-resources)
+
+### F: Create a service principal to get access to API
+
+   - [Create Service Principal](https://docs.microsoft.com/en-us/azure/purview/create-service-principal-azure)
 
 ### F: Connect your local app to Azure
 
