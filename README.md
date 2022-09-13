@@ -21,26 +21,26 @@
 
 ### 2: Purview Setup
 
-#### A: Create a purview account in azure. 
+  #### A: Create a purview account in azure. 
 
    - Reference article for the details on creating a purview account - [Create an Azure Purview account in the Azure portal](https://docs.microsoft.com/en-us/azure/purview/create-catalog-portal)
 
-#### B: Create a service principal which will be used to access the API.
+  #### B: Create a Purview collection in Azure Portal
+
+   - You can follow the steps provided in Microsoft Link - [Create Purview Collection](https://docs.microsoft.com/en-us/azure/purview/quickstart-create-collection)
+  
+  #### C: Create a service principal which will be used to access the API.
 
    - Reference article for the details on creating the service principal - [Create a Service Principal](
 https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a-service-principal-application)
 
-#### C: Set up authentication using service principal
+  #### D: Set up authentication using service principal
 
    - Reference article for the details setting up Authentication - [Set up authentication](https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#set-up-authentication-using-service-principal)
 
-#### D: Create a Purview collection in Azure Portal
+  #### F: Add MongoDB as a source in Purview
 
-  - You can follow the steps provided in Microsoft Link - [Create Purview Collection](https://docs.microsoft.com/en-us/azure/purview/quickstart-create-collection)
-
-#### F: Add MongoDB as a source in Purview
-
-- You can follow the steps provided in Microsoft Link - [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
+   - You can follow the steps provided in Microsoft Link - [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
 
 ### 3: Create a app service in Azure
 
