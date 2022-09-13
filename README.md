@@ -17,6 +17,7 @@
   - In the Security tab:
     - Select Network Access and add a new IP Whitelist for your laptop's current IP address.
     - Select Database Access, choose to add a new user, e.g. main_user,give a password of your choice. For Database User Privileges, from the built-in role dropdown choose "Read and write to any database" (make a note of the password you specify).
+    - Click on Browse Collections-> Create Database -> Give a database name and a collection name of your choice and click Create - make a note of this MongoDB URL address to be used in a later step
   - In the Atlas console, for the database cluster you deployed, click the Connect button, select Connect Your Application, and for the latest Node.js version copy the Connection String Only - make a note of this MongoDB URL address to be used in a later step
 
 ### 2: Purview Setup
@@ -53,8 +54,16 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
 ### 4: Connect your local app to Azure
 
   - Download the code and open the code in Visual Studio.
-  - In mongo.connect() add the connection string of the your Atlas cluster 6.0+.
-  - Replace the database you want to watch in client.db("Company"); 
+  - Open the test.env file and add the following details:
+  
+    - CONNECTION_URI- add the connection string of the your Atlas cluster 6.0+.
+    - DATABASE_TO_WATCH - Name of the MongoDB Database you created in Step 1.
+    - CLIENT_ID :
+    - CLIENT_SECRET : 
+    - TENANT_ID:
+    - GUID:
+    - FULLY_QUALIFIED_NAME:
+    
   -  Go to Extensions on the left menu and type "MongoDB" and install the extension for MongoDB.
   - Go to Extensions on the left menu and type "Azure"
     - Install these extensions for 
