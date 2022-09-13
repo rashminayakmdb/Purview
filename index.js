@@ -1,18 +1,20 @@
 var express = require('express');
 var app = express();
 var qs = require('qs');
+const axios=require("axios");
 const date = require('date-and-time')
+require('dotenv').config({ path: './test.env' })
+const mongo = require("mongodb").MongoClient;
 app.get('/', function (req, res) {
-    const mongo = require("mongodb").MongoClient;
-    mongo.connect("mongodb+srv://username:password@clusternewversion.69qfa.mongodb.net/?retryWrites=true&w=majority").then(client => 
+
+    mongo.connect(process.env.CONNECTION_URI).then(client => 
     {
         console.log("Connected to MongoDB server");
-        const axios=require("axios");
+        
         // Select a MongoDB database to watch
-        const db = client.db("Company"); 
+        const db = client.db(process.env.DATABASE_TO_WATCH); 
         pipeline = [];
         const changeStream = db.watch(pipeline,{ showExpandedEvents: true });
-    
         console.log(`\n ******* Listening to the changes in MongoDB ********`);
     
         // start listenening to changes
@@ -35,8 +37,8 @@ app.get('/', function (req, res) {
             const body=qs.stringify(
                 {
                 'grant_type': 'client_credentials',
-                'client_id': '65f32d58-5842-4dfe-a0de-f32682fa0e95',
-                'client_secret': 'L2H8Q~2IRn-hsjM4K9XPcqPMMXA-ICnnK3un0dbW',
+                'client_id': process.env.CLIENT_ID,
+                'client_secret': process.env.CLIENT_SECRET,
                 'resource': 'https://purview.azure.net'
             });
             const headers = { 
@@ -45,7 +47,7 @@ app.get('/', function (req, res) {
     
             console.log(`\n ******* POST call and get the bearer token ********`);
             // Post Call to get the bearer token
-            axios.post('https://login.microsoftonline.com/c96563a8-841b-4ef9-af16-33548de0c958/oauth2/token',body,{ headers })
+            axios.post(`https://login.microsoftonline.com/${process.env.TENANT_ID}/oauth2/token`,body,{ headers })
             .then(res => {
                 //console.log(`status code:${res.status}`);
                 //console.log(`Body:${JSON.stringify(res.data)}`);
@@ -74,7 +76,7 @@ app.get('/', function (req, res) {
                             "attributes": {
                                 "modifiedTime": 0,
                                 "createTime": 0,
-                                "qualifiedName": `mongodb://atlas-mkkvsy-shard-0/databases/${Database}/collections/${Collection}`,
+                                "qualifiedName": `${process.env.FULLY_QUALIFIED_NAME}/databases/${Database}/collections/${Collection}`,
                                 "name": `${Collection}`
                             }
                             }
@@ -86,11 +88,11 @@ app.get('/', function (req, res) {
                     };
             
                     // call a POST API call to create the mongodb collection in Purview
-                    axios.post('https://mdbPurview.catalog.purview.azure.com/api/atlas/v2/entity/bulk?guid=df972dde-0a17-42b5-b397-d13afa93a6ac&ignoreRelationships=false',body,{ headers })
+                    axios.post(`${process.env.ENDPOINT}/api/atlas/v2/entity/bulk?${process.env.GUID}&ignoreRelationships=false`,body,{ headers })
                     .then(res => {
                         console.log(`status code:${res.status}`);
                         console.log(`Body:${JSON.stringify(res.data)}`);
-                        console.log(`\n ******** Success! Let's Vaidate in the Azure Purview Portal now! ********`);
+                        console.log(`\n ******** Success! Let's Validate in the Azure Purview Portal now! ********`);
                     }) .catch(function (error) {
                         if (error.response) {
                         console.log('data',error.response.data);
@@ -104,14 +106,14 @@ app.get('/', function (req, res) {
                     const headers = { 
                         'Authorization': newAccessToken
                         };
-                    var qualifiedName=`mongodb://atlas-mkkvsy-shard-0/databases/${Database}/collections/${Collection}`;
+                    var qualifiedName=`${process.env.FULLY_QUALIFIED_NAME}/databases/${Database}/collections/${Collection}`;
     
                     // call a DEL API call to drop the mongodb collection in Purview
-                    axios.delete(`https://mdbPurview.catalog.purview.azure.com/api/atlas/v2/entity/uniqueAttribute/type/mongodb_collection?attr:qualifiedName=${qualifiedName}`,{ headers })
+                    axios.delete(`${process.env.ENDPOINT}/api/atlas/v2/entity/uniqueAttribute/type/mongodb_collection?attr:qualifiedName=${qualifiedName}`,{ headers })
                     .then(res => {
                         console.log(`status code:${res.status}`);
                         console.log(`Body:${JSON.stringify(res.data)}`);
-                        console.log(`\n ******** Success! Let's Vaidate in the Azure Purview Portal now! ********`);
+                        console.log(`\n ******** Success! Let's Validate in the Azure Purview Portal now! ********`);
                     }) .catch(function (error) {
                         if (error.response) {
                         console.log('data',error.response.data);
