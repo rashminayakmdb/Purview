@@ -78,12 +78,12 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
 ## Create a MongoDB collection:
 
   - In the Atlas portal, Create a collection under the database you are watching. [Portal](https://account.mongodb.com/account/login)
-  - Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets and click on the root collection. The MongoDB collection that you created in the MongoDB Atlas Portal should be listed here in Purview.
+  - Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets and click on the root collection. The MongoDB collection that you created in the MongoDB Atlas should be listed here in Purview.
 
 ## Drop a MongoDB collection:
 
   -  In the Atlas portal, Drop a collection under the database you are watching.
-  - Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets and click on the root collection. The MongoDB collection that you dropped from the MongoDB Atlas Portal should be removed from Purview.
+  - Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets and click on the root collection. The MongoDB collection that you dropped from the MongoDB Atlas should be removed from Purview.
  
     
     
