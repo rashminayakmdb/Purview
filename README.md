@@ -66,7 +66,6 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
     - FULLY_QUALIFIED_NAME : Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets -> By Source Type and copy the "fully_qualified name".
     - ENDPOINT : Go to Azure portal -> Microsoft Purview account -> Properties -> Copy the "Atlas endpoint"
     
-  - Go to Extensions on the left menu and type "MongoDB" and install the extension for MongoDB.
   - Go to Extensions on the left menu and type "Azure"
     - Install these extensions for 
       - Azure Account
