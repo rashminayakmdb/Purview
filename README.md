@@ -42,11 +42,11 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
 
 - You can follow the steps provided in Microsoft Link - [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
 
-### 7: Create a app service in Azure
+### 3: Create a app service in Azure
 
   - You can follow the steps under the section "Create Azure resources" provided in Microsoft Link - [Create App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal#create-azure-resources)
 
-### 8: Connect your local app to Azure
+### 4: Connect your local app to Azure
 
   - Download the code and open the code in Visual Studio.
   - In mongo.connect() add the connection string of the your Atlas cluster 6.0+.
@@ -60,7 +60,7 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
   - Once the extensions are intsalled you should see a Azure icon on the left menu.Click on that and sign in to Azure account. After Signing in, it should look like this.
    <img width="373" alt="Screenshot 2022-09-12 at 3 04 15 PM" src="https://user-images.githubusercontent.com/101181433/189621346-c3d9fef8-7fb4-4235-a5da-6e39bf2624a6.png">
 
-### 9: Deploy your app to Azure
+### 5: Deploy your app to Azure
   - You should see your new app services created in the Azure portal in Visual Studio under your subscription-> app services
   - Right click on the app service, Click Deploy to Web App. Deployments should be done in few minutes.
 
