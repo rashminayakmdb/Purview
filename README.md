@@ -3,16 +3,14 @@
 ## Description
    #### With the introduction of change events in MongoDB version 6.0, DML's can also be captured and this utility shows all the steps to build a Custom Push Solution to listen to the Change Events in MongoDB to capture the DML's (Create/Drop) of collections for a database being watched and then push those changes to Microsoft Azure Purview App using Purview API's.
     
-# Prerequisites
+## Prerequisites
   #### 1: MongoDB Atlas 6.0 cluster.
   #### 2: Azure subscription.
   #### 3: Visual Studio app installed, Click [Download](https://code.visualstudio.com/download) to get the app.
  
 # Setup
 
-## 1: MongoDB cluster Setup
-
-### 1: Configure Atlas Environment
+## 1: Configure MongoDB Atlas Environment
 
   - Log-on to Atlas account. [Login](https://account.mongodb.com/account/login)
 
@@ -23,7 +21,7 @@
     - Click on Browse Collections-> Create Database -> Give a database name and a collection name of your choice and click Create - make a note of this MongoDB URL address to be used in a later step
   - In the Atlas console, for the database cluster you deployed, click the Connect button, select Connect Your Application, and for the latest Node.js version copy the Connection String Only - make a note of this MongoDB URL address to be used in a later step
 
-### 2: Purview Setup
+## 2: Purview Setup
 
   #### A: Create a purview account in azure. 
 
@@ -49,12 +47,12 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
    - Reference article outlines how to register MongoDB,authenticate and interact with MongoDB in Microsoft Purview
     [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
 
-### 3: Create a app service in Azure
+## 3: Create an app service in Azure
 
   - Create a app service in Azure to deploy the Node.js code.
   You can follow the steps under the section "Create Azure resources" provided in Microsoft Link - [Create App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal#create-azure-resources)
 
-### 4: Connect your local app to Azure
+## 4: Connect your local app to Azure
 
   - Download the code and open the code in Visual Studio.
   - Open the test.env file and add the following details:
@@ -79,7 +77,7 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
  
    <img width="373" alt="Screenshot 2022-09-12 at 3 04 15 PM" src="https://user-images.githubusercontent.com/101181433/189621346-c3d9fef8-7fb4-4235-a5da-6e39bf2624a6.png">
 
-### 5: Deploy your app to Azure ap service
+## 5: Deploy your app to Azure ap service
 
   - In Visual Studio under Azure subscription-> app services, you should see your new app service that you created in the Azure portal.
   - Right click on the app service, Click "Deploy to Web App".
