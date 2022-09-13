@@ -19,24 +19,26 @@
     - Select Database Access, choose to add a new user, e.g. main_user,give a password of your choice. For Database User Privileges, from the built-in role dropdown choose "Read and write to any database" (make a note of the password you specify).
   - In the Atlas console, for the database cluster you deployed, click the Connect button, select Connect Your Application, and for the latest Node.js version copy the Connection String Only - make a note of this MongoDB URL address to be used in the next step
 
-### 2: Create a purview account in azure. 
+### 2: Purview Setup
 
-  - Reference article for the details on creating a purview account - [Create an Azure Purview account in the Azure portal](https://docs.microsoft.com/en-us/azure/purview/create-catalog-portal)
+#### A: Create a purview account in azure. 
 
-### 3: Create a service principal which will be used to access the API.
+   - Reference article for the details on creating a purview account - [Create an Azure Purview account in the Azure portal](https://docs.microsoft.com/en-us/azure/purview/create-catalog-portal)
+
+#### B: Create a service principal which will be used to access the API.
 
    - Reference article for the details on creating the service principal - [Create a Service Principal](
 https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a-service-principal-application)
 
-### 4: Set up authentication using service principal
+#### C: Set up authentication using service principal
 
    - Reference article for the details setting up Authentication - [Set up authentication](https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#set-up-authentication-using-service-principal)
 
-### 5: Create a Purview collection in Azure Portal
+#### D: Create a Purview collection in Azure Portal
 
   - You can follow the steps provided in Microsoft Link - [Create Purview Collection](https://docs.microsoft.com/en-us/azure/purview/quickstart-create-collection)
 
-### 6: Add MongoDB as a source in Purview
+#### F: Add MongoDB as a source in Purview
 
 - You can follow the steps provided in Microsoft Link - [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
 
