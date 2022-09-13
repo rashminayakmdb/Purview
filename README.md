@@ -60,9 +60,17 @@
     
 # Execution
 
-  - Add a collection to the database you are watching. Hit the localhost url : http://localhost:8080/ and you should see the message 'MongoDB ChangeStream for Purview' with current timestamp. This collection should be created in the Purview root collection in the 'Microsoft Purview governance portal'.
-  - Delete a collection to the database you are watching. Hit the localhost url : http://localhost:8080/ and you should see the message 'MongoDB ChangeStream for Purview' with current timestamp. This collection should be dropped in the Purview root collection in the 'Microsoft Purview governance portal'.
+## Create a MongoDB collection:
 
+  - Start the Azure app service.Click on browse to see that the app service is running. You should see the message 'MongoDB ChangeStream for Purview' with current timestamp.
+  - Add a collection in the Atlas portal to the database you are watching. [Portal](https://account.mongodb.com/account/login).
+  - Go to 'Microsoft Purview governance portal' in Azure. Click on Browse assets and click on the root collection. The MongoDB collection created should be listed here in Purview.
+
+## Drop a MongoDB collection:
+
+  -  Drop a collection in the Atlas portal to the database you are watching.
+  - Go to  'Microsoft Purview governance portal' in Azure. Click on Browse assets and click on the root collection. The MongoDB collection dropped should be removed from the Purview.
+ 
     
     
     
