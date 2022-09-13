@@ -58,13 +58,13 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
   
     - CONNECTION_URI- add the connection string of the your Atlas cluster 6.0+.
     - DATABASE_TO_WATCH - Name of the MongoDB Database you created in Step 1.
-    - CLIENT_ID :
-    - CLIENT_SECRET : 
-    - TENANT_ID:
-    - GUID:
-    - FULLY_QUALIFIED_NAME:
+    - CLIENT_ID : Client_ID which you got from Step 2D
+    - CLIENT_SECRET : Client_secret which you got from Step 2D
+    - TENANT_ID: Follow Steps in [get your tenant id](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
+    - GUID: Go to Azure portal -> 
+    - FULLY_QUALIFIED_NAME: Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets -> By Source Type and copy the fully_qualified name.
     
-  -  Go to Extensions on the left menu and type "MongoDB" and install the extension for MongoDB.
+  - Go to Extensions on the left menu and type "MongoDB" and install the extension for MongoDB.
   - Go to Extensions on the left menu and type "Azure"
     - Install these extensions for 
       - Azure Account
