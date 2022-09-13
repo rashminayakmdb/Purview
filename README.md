@@ -19,9 +19,13 @@
     - Select Database Access, choose to add a new user, e.g. main_user,give a password of your choice. For Database User Privileges, from the built-in role dropdown choose "Read and write to any database" (make a note of the password you specify).
   - In the Atlas console, for the database cluster you deployed, click the Connect button, select Connect Your Application, and for the latest Node.js version copy the Connection String Only - make a note of this MongoDB URL address to be used in the next step
 
-### B: Create a Azure Purview Account
+### B: Create a purview account in azure. 
 
-  - You can follow the steps provided in Microsoft Link -  [Create Purview Account](https://docs.microsoft.com/en-us/azure/purview/create-catalog-portal)
+  - Reference article for the details on creating a purview account - [Create an Azure Purview account in the Azure portal](https://docs.microsoft.com/en-us/azure/purview/create-catalog-portal)
+
+### C: Create a service principal which will be used to access the API.
+
+   - Reference article for the details on creating the service principal - [Create a Service Principal](https://docs.microsoft.com/en-us/azure/purview/create-service-principal-azure)
 
 ### C: Create a Purview collection in Azure Portal
 
@@ -34,10 +38,6 @@
 ### E: Create a app service in Azure
 
   - You can follow the steps under the section "Create Azure resources" provided in Microsoft Link - [Create App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal#create-azure-resources)
-
-### F: Create a service principal to get access to API
-
-   - [Create Service Principal](https://docs.microsoft.com/en-us/azure/purview/create-service-principal-azure)
 
 ### F: Connect your local app to Azure
 
