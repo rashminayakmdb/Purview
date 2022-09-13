@@ -57,30 +57,32 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
   - Replace the database you want to watch in client.db("Company"); 
   -  Go to Extensions on the left menu and type "MongoDB" and install the extension for MongoDB.
   - Go to Extensions on the left menu and type "Azure"
-  - Install these extensions for 
-    - Azure Account
-    - Azure Tools
-    - Azure App Service
-  - Once the extensions are intsalled you should see a Azure icon on the left menu.Click on that and sign in to Azure account. After Signing in, it should look like this.
+    - Install these extensions for 
+      - Azure Account
+      - Azure Tools
+      - Azure App Service
+  - Once the extensions are installed you should see a Azure icon on the left menu.Click on that and sign in to Azure account. After Signing in, it should look like this.
+ 
    <img width="373" alt="Screenshot 2022-09-12 at 3 04 15 PM" src="https://user-images.githubusercontent.com/101181433/189621346-c3d9fef8-7fb4-4235-a5da-6e39bf2624a6.png">
 
-### 5: Deploy your app to Azure
-  - You should see your new app services created in the Azure portal in Visual Studio under your subscription-> app services
-  - Right click on the app service, Click Deploy to Web App. Deployments should be done in few minutes.
+### 5: Deploy your app to Azure ap service
 
+  - In Visual Studio under Azure subscription-> app services, you should see your new app service that you created in the Azure portal.
+  - Right click on the app service, Click "Deploy to Web App".
     
 # Execution
 
+ - Start the Azure app service. Click on browse to see that the app service is running. You should see the message 'MongoDB ChangeStream for Purview' with current timestamp.
+ - 
 ## Create a MongoDB collection:
 
-  - Start the Azure app service.Click on browse to see that the app service is running. You should see the message 'MongoDB ChangeStream for Purview' with current timestamp.
-  - Add a collection in the Atlas portal to the database you are watching. [Portal](https://account.mongodb.com/account/login)
-  - Go to 'Microsoft Purview governance portal' in Azure. Click on Browse assets and click on the root collection. The MongoDB collection that you created in the MongoDB Atlas Portal should be listed here in Purview.
+  - In the Atlas portal, Create a collection under the database you are watching. [Portal](https://account.mongodb.com/account/login)
+  - Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets and click on the root collection. The MongoDB collection that you created in the MongoDB Atlas Portal should be listed here in Purview.
 
 ## Drop a MongoDB collection:
 
-  -  Drop a collection in the Atlas portal to the database you are watching.
-  - Go to  'Microsoft Purview governance portal' in Azure. Click on Browse assets and click on the root collection. The MongoDB collection that you dropped from the MongoDB Atlas Portal should be removed from Purview.
+  -  In the Atlas portal, Drop a collection under the database you are watching.
+  - Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets and click on the root collection. The MongoDB collection that you dropped from the MongoDB Atlas Portal should be removed from Purview.
  
     
     
