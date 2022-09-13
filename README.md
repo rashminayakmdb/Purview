@@ -61,6 +61,7 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
       - Azure Account
       - Azure Tools
       - Azure App Service
+      
   - Once the extensions are installed you should see a Azure icon on the left menu.Click on that and sign in to Azure account. After Signing in, it should look like this.
  
    <img width="373" alt="Screenshot 2022-09-12 at 3 04 15 PM" src="https://user-images.githubusercontent.com/101181433/189621346-c3d9fef8-7fb4-4235-a5da-6e39bf2624a6.png">
@@ -72,15 +73,15 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
     
 # Execution
 
- - Go to Azure portal,Click on the app service created. Start your app service.
+ - Go to Azure portal, Click on the app service created. Start your app service.
  - Click on browse to see if the app service is running. You should see the message 'MongoDB ChangeStream for Purview' with current timestamp.
  
-## Create a MongoDB collection:
+### Create a MongoDB collection:
 
   - In the Atlas portal, Create a collection under the database you are watching. [Portal](https://account.mongodb.com/account/login)
   - Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets and click on the root collection. The MongoDB collection that you created in the MongoDB Atlas should be listed here in Purview.
 
-## Drop a MongoDB collection:
+### Drop a MongoDB collection:
 
   -  In the Atlas portal, Drop a collection under the database you are watching.
   - Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets and click on the root collection. The MongoDB collection that you dropped from the MongoDB Atlas should be removed from Purview.
