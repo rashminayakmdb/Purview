@@ -62,7 +62,7 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
     - CLIENT_ID : Client_ID which you got from Step 2D
     - CLIENT_SECRET : Client_secret which you got from Step 2D
     - TENANT_ID : Go to Azure portal -> Microsoft Purview account -> Properties -> Copy the "Managed identity tenant ID"
-    - GUID : 
+    - GUID : Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets -> By Source Type-> Click on the name -> You should see your GUID in the page url.
     - FULLY_QUALIFIED_NAME : Go to Azure portal -> Microsoft Purview account. Click on 'Open Microsoft Purview governance portal'. Click on Browse assets -> By Source Type and copy the "fully_qualified name".
     - ENDPOINT : Go to Azure portal -> Microsoft Purview account -> Properties -> Copy the "Atlas endpoint"
     
