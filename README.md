@@ -72,8 +72,9 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
     
 # Execution
 
- - Start the Azure app service. Click on browse to see that the app service is running. You should see the message 'MongoDB ChangeStream for Purview' with current timestamp.
- - 
+ - Go to Azure portal,Click on the app service created. Start your app service.
+ - Click on browse to see if the app service is running. You should see the message 'MongoDB ChangeStream for Purview' with current timestamp.
+ 
 ## Create a MongoDB collection:
 
   - In the Atlas portal, Create a collection under the database you are watching. [Portal](https://account.mongodb.com/account/login)
