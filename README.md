@@ -1,9 +1,9 @@
 # Purview
 
-# Requisites
+# Prerequisites
   #### 1: MongoDB Atlas 6.0 cluster.
   #### 2: Azure subscription.
-  #### 3: Visual Studio app installed, Click [Download](https://code.visualstudio.com/download) to download the app.
+  #### 3: Visual Studio app installed, Click [Download](https://code.visualstudio.com/download) to get the app.
  
 # Setup
 
@@ -31,20 +31,24 @@
   
   #### C: Create a service principal which will be used to access the API.
 
-   - Reference article for the details on creating the service principal - [Create a Service Principal](
+   - For a REST API client to access the catalog, the client must have a service principal (application).
+   Reference article for the details on creating the service principal - [Create a Service Principal](
 https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a-service-principal-application)
 
   #### D: Set up authentication using service principal
 
-   - Reference article for the details setting up Authentication - [Set up authentication](https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#set-up-authentication-using-service-principal)
+   - Assign the correct role to establish trust between the service principal and the Purview account.
+   You can follow the steps under the section "Set up authentication using service principal" provided in the reference article - [Set up authentication](https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#set-up-authentication-using-service-principal)
 
-  #### F: Add MongoDB as a source in Purview
+  #### F: Connect to and manage MongoDB in Microsoft Purview.
 
-   - You can follow the steps provided in Microsoft Link - [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
+   - Reference article outlines how to register MongoDB,authenticate and interact with MongoDB in Microsoft Purview
+    [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
 
 ### 3: Create a app service in Azure
 
-  - You can follow the steps under the section "Create Azure resources" provided in Microsoft Link - [Create App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal#create-azure-resources)
+  - Create a app service in Azure to deploy the Node.js code.
+  You can follow the steps under the section "Create Azure resources" provided in Microsoft Link - [Create App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal#create-azure-resources)
 
 ### 4: Connect your local app to Azure
 
