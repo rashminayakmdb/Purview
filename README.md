@@ -1,5 +1,8 @@
-# Purview
+# Purview Custom Push Model Solution
 
+## Description
+   #### With the introduction of change events in MongoDB version 6.0, DML's can also be captured and this utility shows all the steps to build a Custom Push Solution to listen to the Change Events in MongoDB to capture the DML's (Create/Drop) of collections for a database being watched and then push those changes to Microsoft Azure Purview App using Purview API's.
+    
 # Prerequisites
   #### 1: MongoDB Atlas 6.0 cluster.
   #### 2: Azure subscription.
