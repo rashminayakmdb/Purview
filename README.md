@@ -1,9 +1,9 @@
 # Purview
 
 # Requisites
- - MongoDB Atlas 6.0 cluster
- - Azure subscription
- - Visual Studio app installed, Go to [Download](https://code.visualstudio.com/download) to download the app.
+  #### 1: MongoDB Atlas 6.0 cluster.
+  #### 2: Azure subscription.
+  #### 3: Visual Studio app installed, Click [Download](https://code.visualstudio.com/download) to download the app.
  
 # Setup
 
