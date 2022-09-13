@@ -15,7 +15,10 @@
   
   - In the project's Security tab, choose to add a new user called main_user, for this user select Add Default Privileges and in the Default Privileges section add the roles readWriteAnyDatabase.
   - Create a M10 Cluster in a cloud provider region of your choice with default settings. Make sure to choose Mongodb version 6.0. Capturing Change events on create and update of collection is introduced as part of 6.0 version
-  - In the Security tab, add a new IP Whitelist for your laptop's current IP address
+  - In the Security tab:
+    - Select Network Access and add a new IP Whitelist for your laptop's current IP address.
+    - Select Database Access, choose to add a new user, e.g. main_user, and for User Privileges specify Read and write to any database (make a note of the password you specify).
+  - In the Atlas console, for the database cluster you deployed, click the Connect button, select Connect Your Application, and for the latest Node.js version copy the Connection String Only - make a note of this MongoDB URL address to be used in the next step
 
 ### B: Create a Azure Purview Account
 
