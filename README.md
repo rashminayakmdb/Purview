@@ -76,7 +76,7 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
  
    <img width="373" alt="Screenshot 2022-09-12 at 3 04 15 PM" src="https://user-images.githubusercontent.com/101181433/189621346-c3d9fef8-7fb4-4235-a5da-6e39bf2624a6.png">
 
-## 5: Deploy your app to Azure ap service
+## 5: Deploy your app to Azure app service
 
   - In Visual Studio under Azure subscription-> app services, you should see your new app service that you created in the Azure portal.
   - Right click on the app service, Click "Deploy to Web App".
