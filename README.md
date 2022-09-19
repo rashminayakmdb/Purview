@@ -42,7 +42,7 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
    - Assign the correct role to establish trust between the service principal and the Purview account - make a note of client_id,client secret to be used in a later step.
    You can follow the steps under the section "Set up authentication using service principal" provided in the reference article - [Set up authentication](https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#set-up-authentication-using-service-principal)
 
-  #### F: Connect to and manage MongoDB in Microsoft Purview.
+  #### E: Connect to and manage MongoDB in Microsoft Purview.
 
    - Reference article outlines how to register MongoDB,authenticate and perform a initial scan with MongoDB in Microsoft Purview
     [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
