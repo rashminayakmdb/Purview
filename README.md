@@ -44,8 +44,7 @@ https://docs.microsoft.com/en-us/azure/purview/tutorial-using-rest-apis#create-a
 
   #### E: Connect to and manage MongoDB in Microsoft Purview.
 
-   - Reference article outlines how to register MongoDB,authenticate and perform a initial scan with MongoDB in Microsoft Purview
-    [Add MongoDB](https://docs.microsoft.com/en-us/azure/purview/register-scan-mongodb)
+   - Reference article outlines how to [register](https://learn.microsoft.com/en-us/azure/purview/register-scan-mongodb#register) MongoDB,authenticate and perform a [initial scan](https://learn.microsoft.com/en-us/azure/purview/register-scan-mongodb#scan) with MongoDB in Microsoft Purview.
 
 ## 3: Create an app service in Azure
 
