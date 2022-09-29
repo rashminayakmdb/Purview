@@ -1,7 +1,7 @@
 # Purview Custom Push Model Solution
 
 ## Description
-   #### Change streams allow applications to access real-time data changes by watching collections, databases, or deployments for changes. Starting in MongoDB 6.0, change streams also support change notifications for DDL events. This utility shows all the steps to build a Custom Push Solution to listen to the Change Events in MongoDB to capture the DDL's (Create/Drop) of collections for a database being watched and then push those changes to Microsoft Azure Purview App using Purview API's.
+   #### Change streams allow applications to access real-time data changes by watching collections, databases, or deployments for changes. Starting in MongoDB 6.0, change streams also support change notifications for DDL events. This utility shows all the steps to build a Custom Push Solution to listen to the Change Events in MongoDB to capture the DDL's (Create/Drop) of collections for a database being watched in Real Time using the Azure app service and then push those changes to Microsoft Azure Purview App using Purview API's.
     
 ## Prerequisites
   #### 1: MongoDB Atlas 6.0 cluster.
